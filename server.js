@@ -1,5 +1,5 @@
 var express = require("express"); //using the express web framework
-
+const port = 3000;
 var movieController = require('./controllers/movieController');
 var commentController = require('./controllers/commentController');
 
@@ -17,4 +17,4 @@ app.route('/comments/:id').delete(commentController.deleteComment)
 
 
 app.listen(8080, "127.0.0.1"); // start the nodejs to be listening for incoming request @ port 8080
-console.log("web server running @ http://127.0.0.1:8080"); // output to console 
+//console.log("web server running @ http://127.0.0.1:8080"); // output to console 
